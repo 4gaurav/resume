@@ -360,6 +360,7 @@ body {
     padding: 25px;
     text-align: center;
     border: 10px solid #013747;
+      border-radius: 1rem;
     transition: all 0.3s ease-in;
   }
   .skills .skills-flex-container .box .image {
