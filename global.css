@@ -1,0 +1,549 @@
+:root {
+
+    /* color variables  */
+    --white: #FFFFFF;
+    --black: #000000;
+    --pink: #FEF4F7;
+    --grey: #F9F5FC;
+    --purple: #002548;
+    --yellow: #FFE03F;
+    --purple-gradient: linear-gradient(45deg, #ff2782 0%, #ff2782 100%);
+    --giant: #ff2782;
+
+    /* color variables end */
+
+    /* typo varibale end */
+    --inter: 'Libre Baskerville', serif;
+
+    --trans-dur: 0.5s;
+    --body-padding: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--inter);
+    
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #164648;
+  
+
+}
+
+
+/* utilities */
+
+.nopadding-nill {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+}
+
+.nomargin-nill {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+}
+
+.padding-top {
+    padding-top: 5.25rem;
+    
+}
+.padding-bottom {
+    
+    padding-bottom: 5.25rem;
+}
+.margin-bw {
+    margin-top: 4rem;
+   
+}
+
+.heading-1 {
+    font-family: var(--inter);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: 0em;
+    /* text-align: center; */
+    color: var(--white);
+    margin-top: 6rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .heading-1 {
+    font-family: var(--inter);
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--white);
+    margin-top: 0rem;
+  }
+}
+.heading-2{
+    font-family: var(--inter);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: var(--white);
+  }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .heading-3{
+        text-align: center !important;
+      }
+  }
+.heading-3{
+  font-family: var(--inter);
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: var(--white);
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .heading-3{
+        font-family: var(--inter);
+        font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0em;
+        color: var(--white);
+        text-align: center;
+      }
+  }
+.heading-4{
+  font-family: var(--inter);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: rgb(110, 106, 106);
+}
+.heading-5{
+  font-family: var(--inter);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color: var(--white);
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .heading-5 {
+    font-size: 0.87rem;
+  }
+}
+.heading-6{
+  font-family: var(--inter);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color: rgb(173, 169, 169);
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .heading-6 {
+    font-size: 0.7rem;
+  }
+}
+
+
+
+
+/* navbar starts from here */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .d-md-block {
+      display: none;
+    }
+  }
+  .navbar{
+    background: transparent;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar{
+        background: transparent !important;
+      }
+      
+  }
+  .navbar-brand img{
+    width: 9rem;
+  }
+  .navbar-toggler{
+    border: 0.12rem solid #FBBF10;
+  }
+
+  .navbar-toggler-icon{
+    background-color: white;
+    border-radius: 0.2rem;
+    border: 0.12rem solid #FBBF10;
+  }
+  /* navbar ends here */
+
+
+
+
+/* hero starts from here */
+
+.hero img{
+    border-radius: 2rem;
+    border-radius: 50px;
+    background: #164648;
+    box-shadow:  20px 20px 60px #133c3d,
+                 -20px -20px 60px #195153;
+                
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .hero img {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      /* padding: 0rem 1rem 0rem 1rem; */
+    }
+  }
+ 
+.button {
+    --width: 126px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #FBBF10;
+    --tooltip-color: #000000;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: var(--inter);
+    transition: background 0.3s;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .btn-item {
+      
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #FBBF10;
+    font-size: 0.9rem;
+    color: #000000;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #FBBF10;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    border: 0.02rem solid #FBBF10;
+    background-color: #164648;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  
+  
+  
+  
+
+
+/* hero ends here */
+
+
+/* skills starts from here */
+
+.skills {
+    padding: 50px 0px;
+  }
+  .skills .skills-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+  }
+  @media (max-width: 700px) {
+    .skills .skills-flex-container {
+      gap: 30px;
+    }
+  }
+  .skills .skills-flex-container .box {
+    flex: 1 1 15%;
+    background: #001925;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 24px;
+    padding: 25px;
+    text-align: center;
+    border: 10px solid #013747;
+    transition: all 0.3s ease-in;
+  }
+  .skills .skills-flex-container .box .image {
+    transition: all 0.3s ease-in-out 0.1s;
+  }
+  .skills .skills-flex-container .box .image img {
+    max-width: 75px;
+    object-fit: contain;
+  }
+  .skills .skills-flex-container .box .title {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .skills .skills-flex-container .box:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px;
+    transform: scale(1.1);
+  }
+  .skills .skills-flex-container .box:hover .image {
+    transform: scale(1.5) translateY(-20px);
+  }
+  .skills .skills-flex-container .box:hover .image img {
+    animation: bouncing 0.5s 0.3s;
+  }
+  .skills .skills-flex-container .box:hover .title {
+    letter-spacing: 2px;
+  }
+  @media (max-width: 1100px) {
+    .skills .skills-flex-container .box {
+      flex: 1 0 25%;
+    }
+  }
+  @media (max-width: 630px) {
+    .skills .skills-flex-container .box {
+      flex: 1 0 35%;
+      padding: 15px;
+    }
+    .skills .skills-flex-container .box .image img {
+      max-width: 50px;
+    }
+  }
+  
+  @keyframes bouncing {
+    from, to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+
+
+/* skills ends here */
+
+/* projects starts from here */
+
+.card-content img{
+    border-radius: 0.6rem;
+}
+.project-1{
+    margin-top: 4rem;
+}
+.project-2{
+    margin-top: 8rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .project-1{
+        margin-top: 2rem;
+    }
+    .project-2{
+        margin-top: 2rem;
+    }
+    .project-3{
+        margin-top: 2rem;
+    }
+  }
+
+/* projects ends here */
+
+/* portal starts from here */
+
+.swiper-slide img {
+    display: block;
+    width: 16rem;
+    height: 10rem;
+    border-radius: .8rem;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .swiper-slide img {
+      
+    display: block;
+    width: 16rem;
+    height: 8rem;
+    border-radius: .8rem;
+  }
+  .new-2 {
+   padding: 0rem 0rem;
+  }
+}
+
+
+.swap img {
+    display: block;
+    width: 60rem;
+    height: 25rem;
+    border-radius: 1rem;
+}
+.swap-2 img {
+    display: block;
+    width: 100%;
+    height: 17rem;
+    border-radius: 1rem;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .swap-2 img {
+    display: block;
+    width: 60rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+}
+
+/* .new-img{
+  width: 2rem;
+} */
+/* @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .new-img{
+    width: 1.2rem;
+  }
+} */
+
+/* portal ends here */
+
+/* background starts from here */
+
+.background{
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/hero/bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* background ends here */
+
+/* loader starts from here */
+
+#preloader{
+    background: #000 url(./assets/gif/gif2.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .gif{
+    width: 2rem;
+    
+  }
+ 
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .gif{
+      width: 2rem;
+    }
+  }
+  
+  
+  /* loader ends here */
+
+  /* footer starts from here */
+
+  .footer{
+    margin-top: 5rem;
+  }
+
+  /* footer ends here */
